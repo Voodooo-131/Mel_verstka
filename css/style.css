@@ -19,6 +19,9 @@ header {
 	padding: 1%;
 	 
 }
+
+
+
 html {height: 100%}
 body {
 	width: 100%;
@@ -219,7 +222,6 @@ a.linkMenu {
 
 footer{
 	padding: 1%;
-	border-top: 2px solid silver;
 	margin-top: 10px;
 	padding-bottom: 2%;
 }
@@ -231,7 +233,7 @@ footer{
 
 footer, #page_links:after {height: 700px}
  #page_links {
-	min-height: 4800px;
+	min-height: 4750px;
 	margin-bottom: -5%;
 }
 
@@ -246,18 +248,125 @@ footer, #page_links:after {height: 700px}
 	padding: 5px;
    }
 
-.footer_fon {
 
-background: #c7b39b url(img/fon.jpg); 
-background-attachment: fixed; 
-background-size: auto auto; 
-color: #fff 
+#e-mail {
+margin: 0;
+margin-left: -2.5%;
+margin-top: 40px;
+height: 290px;
+width: 105%;
+background-image: url(https://picsum.photos/5472/3648?image=1083);
+}
+#e-mail ul {
+position: relative; 
+top: 60px;
+}
 
-margin-left: 0%; 
-margin-right : 0%; 
-border: 0px dotted gray; 
-padding: 0px 0px 0px 0px; 
-font-family : sans-serif;}
+
+#footerblock {
+ 	padding: 2% 0;
+	width: 100%; 
+	margin: 20px 0;
+	height: 230px;
+}
+
+#footerblock_in {
+	line-height: 25px;
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	border-radius: 7px;
+	width: 500px;
+	color: #fff;
+}
+
+form input {
+margin-bottom: 15px;
+width: 80%;
+padding: 10px;
+margin-left: 15px;
+}
+
+.footer_down {
+width: 105%; 
+height: 350px;
+
+margin-left: -2.5%;
+background-color: #2E2E2E;
+
+}
 
 
+.menu_hrefs_footer {
+
+text-align: center;
+	border-radius: 4px;
+
+	margin-right: 2.5%;
+	margin-left: 1%; 
+
+
+}
+
+
+#footerblock_down_in {
+	line-height: 100px;
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+
+	width: 100%;
+	color: #fff;
+}
+
+
+.second_menu_buttoms_down{
+	padding: 5px;
+	font-weight: bold;
+	color: white;
+	font-size: 0.9em;
+	margin-right: 0px;
+	margin-left:  0px;
+}
+
+
+.links_down_menu {
+
+	margin-top: -35px;
+	margin-left: -55px;
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	font-size: 0.88em;
+	font-family: "Segoe UI", sans-serif;
+	width: 100%;
+	color: #808080;
+	line-height: 25px;
+}
+
+.footer_icons{
+    margin-top: -30px;
+    font-size: 2.1em;
+}
+
+.footer_icons_networks {     
+    font-size: 100%;
+    font-family: Comic Sans MS, sans-serif; 
+    float: center;
+    padding: 15px;
+    color: white;
+}
+
+.mel_copirait{
+    margin-top: -30px;
+    font-size: 0.9em;
+}
+
+.mel_copirait_znak{
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin-top: -30px;
+    font: 14px/24px roboto-regular,Arial,sans-serif;
+    display: inline-block;
+    color: #fff;
 }
