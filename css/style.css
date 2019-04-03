@@ -370,3 +370,20 @@ text-align: center;
     display: inline-block;
     color: #fff;
 }
+
+.round {
+	width: 80px;
+height: 80px;
+border: 2px ; /* Параметры рамки */
+border-radius: 100px; /* Радиус скругления */
+box-shadow: 0 0 0 3px green, 0 0 13px #333; /* Параметры теней */
+}
+
+.box {
+width: 90px;
+height: 90px;
+border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+border-right: 2px solid silver;
+border-left: 2px solid silver;
+}
