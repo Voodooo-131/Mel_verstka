@@ -4,25 +4,26 @@
 	padding: 0;
 	outline: none;
 }
-header, footer {
-    width: 98%: 
-    background-color: #fff;
 
+header {
+    width: 100%; 
+    background-color: #fff;
 } 
 
 header {
+	width: 67%;
 	margin-top: -10px;
 	margin-left: 14.5%;
-	margin-right: 16.5%;
+	margin-right: 16.5%; 
 	background: black;
-	/*border-bottom: 2px solid silver; */
 	padding: 1%;
-	 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-
-
 html {height: 100%}
+
 body {
 	width: 100%;
 	height: 100%;
@@ -32,16 +33,13 @@ body {
 	font-family: "Segoe UI", sans-serif;
 	line-height: 100%;
 }
-a {
 
+a {
 	color: #FFFFFF;
 	text-decoration: none;
 	transition: all.6s ease;
 	-moz-transition: all.6s ease;
-
 }
-
- 
 
 a:hover {
 	color: #62EDC7;
@@ -61,6 +59,7 @@ img {
 	height: auto;
 	width auto\9;
 }
+
 hr {
 	display: block;
 	border: 0;
@@ -69,23 +68,18 @@ hr {
 	padding: 0;
 }
 
-
-
 .head {
-
 	height: 35px;
 	background: black;
-	
 	padding: 1%;
 }
 
 .body {
-
+	margin-top: 20px;
 	margin-left: 14.5%;
 	margin-right: 15.5%;
 	height: 35px;
 	background: #f7f7f7;
-	
 	padding: 1%;
 }
 
@@ -96,39 +90,63 @@ hr {
 .left {
 	float: left 
 }
+
 .clear {
 	clear: both 
 }
+
 #logo { 
 	margin-left:1%;
 	font-size: 100%;
-	 
 }
 
 .head_menu {
-    
+	margin-left: 3px;
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
-	padding: 10px; 
+	padding: 13px; 
 }
+
 .head_menu_right {
-     
-	font-size: 100%;
+	font-size: 80%;
 	font-family: Comic Sans MS, sans-serif; 
-	float: right;
+	padding: 12px;
+}
+
+.head_menu_right_icon{
+	font-size: 110%;
+	font-family: Comic Sans MS, sans-serif;
+	padding: 2px; 
+}
+
+.head_menu_right_icon_search {
+	padding: 13px;
+}
+
+.enter_botton {
+	width:160px;
+	height:130px;
+	padding: 0.5em 1.2em;
+  	margin: -0.5em -1.2em;
+    background: #20B2AA; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    border-radius: 40px; /* Уголки */
+    border: none;
+  	font-size: 100%;
+	font-family: Comic Sans MS, sans-serif; 
+}
+
+.head_left {
+	margin-top: -9px;
+	justify-content: flex-start;
+}
+
+.head_right {
+	justify-content: flex-end;
+}
+
+.mel {   
 	padding: 5px;
-}
-
-.head_menu_right_stick { 
-font-size: 100%;
-font-family: Comic Sans MS, sans-serif; 
-float: right;
-padding: 5px;
-color: #ffffff;
-}
-
-.mel
-{   
 	font-weight: bold;
 	font-size: 3em;	 
 }
@@ -150,20 +168,32 @@ a.linkMenu {
 .cards_text {
     display: table-cell; 
     text-align: center;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: bold;
-	
+	color: #000000;
+	padding: 12px;
+	line-height: 25px;
 }
 
 .cards_blogs {
-	margin: 40%;
+	margin: 45%;
 	color: #FE4444;
-	font-size: 1em;
+	font-size: 0.6em;
 	font-weight: bold;
 }
 
-#menu_hrefs a {
+.cards_info {
+	margin: 30%;
+    padding: 10px;
+    color: #969696;
+    font-size: 0.8em;
+    line-height: 180px;
+    font-weight: bold;
+}
 
+#menu_hrefs {
+	display: flex;
+	flex-direction: row;
 	border-radius: 4px;
 	margin-right: 2.5%;
 	margin-left: 1%; 
@@ -184,22 +214,23 @@ a.linkMenu {
 }
 
 #wrapper #articles {
-	 
+	display: grid;
+	grid-template-columns: repeat(4, 270px);
+    grid-column-gap: 40px;
+    grid-row-gap: 5px;
 	width: 100%;
-	margin-left: 0%;
+	margin-left: 20px;
 }
 
 #wrapper #articles article {
+	display: block;
 	margin-bottom: 20px;
 	float: left;
-	width: 270px;
 	border: 1px solid silver;
 	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: #fafafa;
-	margin-right: 2.5%;
-	margin-left: 0.9%; 
-	min-height: 430px;
+	height: 430px;
 }
 
 #wrapper #articles article img{
@@ -215,15 +246,15 @@ a.linkMenu {
 	margin-left: 5%;
 	font-weight: normal;
 	font-size: 1.7em;
-
 }
 
 /* стили для футера */
 
 footer{
-	padding: 1%;
+	padding: 0%;
 	margin-top: 10px;
 	padding-bottom: 2%;
+	width: 100%; 
 }
 
 #page_links: after{
@@ -232,9 +263,9 @@ footer{
 }
 
 footer, #page_links:after {height: 700px}
- #page_links {
+#page_links {
 	min-height: 4750px;
-	margin-bottom: -5%;
+	margin-bottom: 0%;
 }
 
 .down_botton {
@@ -246,34 +277,37 @@ footer, #page_links:after {height: 700px}
     font-size: 100%;
 	font-family: Comic Sans MS, sans-serif; 
 	padding: 5px;
-   }
+}
 
 
 #e-mail {
-margin: 0;
-margin-left: -2.5%;
-margin-top: 40px;
-height: 290px;
-width: 105%;
-background-image: url(https://picsum.photos/5472/3648?image=1083);
+	margin: 0;
+	padding: 0%;
+	margin-top: 40px;
+	height: 290px;
+	width: 100%;
+	background-image: url(https://picsum.photos/5472/3648?image=1083);
 }
+
 #e-mail ul {
-position: relative; 
-top: 60px;
+	position: relative; 
+	top: 60px;
 }
 
 
 #footerblock {
- 	padding: 2% 0;
 	width: 100%; 
-	margin: 20px 0;
 	height: 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #footerblock_in {
 	line-height: 25px;
 	text-align: center;
-	padding: 1%;
+	padding: 0%;
 	height: 100px;
 	border-radius: 7px;
 	width: 500px;
@@ -281,47 +315,49 @@ top: 60px;
 }
 
 form input {
-margin-bottom: 15px;
-width: 80%;
-padding: 10px;
-margin-left: 15px;
+	margin-bottom: 15px;
+	width: 80%;
+	padding: 10px;
+	margin-left: 15px;
 }
 
 .footer_down {
-width: 105%; 
-height: 350px;
-
-margin-left: -2.5%;
-background-color: #2E2E2E;
-
+	display: flex;
+	justify-content: center;
+	width: 100%; 
+	height: 350px;
+	background-color: #2E2E2E;
 }
 
 
 .menu_hrefs_footer {
-
-text-align: center;
+	text-align: center;
 	border-radius: 4px;
-
 	margin-right: 2.5%;
-	margin-left: 1%; 
-
-
+	margin-left: 1%;
 }
 
 
 #footerblock_down_in {
 	line-height: 100px;
 	text-align: center;
-	padding: 1%;
+	padding: 0%;
 	height: 100px;
-
+	margin-left: 13%;
+	margin-right: 10%;
 	width: 100%;
 	color: #fff;
 }
 
+a.linkMenu_down {	
+	padding: 8px;
+	font-weight: bold;
+	font-size: 0.9em;
+	color:#62EDC7;
+}
 
 .second_menu_buttoms_down{
-	padding: 5px;
+	padding: 3px;
 	font-weight: bold;
 	color: white;
 	font-size: 0.9em;
@@ -331,7 +367,6 @@ text-align: center;
 
 
 .links_down_menu {
-
 	margin-top: -35px;
 	margin-left: -55px;
 	text-align: center;
@@ -342,11 +377,14 @@ text-align: center;
 	width: 100%;
 	color: #808080;
 	line-height: 25px;
+	opacity: 0.6;
 }
+
 
 .footer_icons{
     margin-top: -30px;
     font-size: 2.1em;
+    margin-left: -80px;
 }
 
 .footer_icons_networks {     
@@ -360,30 +398,12 @@ text-align: center;
 .mel_copirait{
     margin-top: -30px;
     font-size: 0.9em;
+    margin-left: -40px;
 }
 
 .mel_copirait_znak{
-    border-bottom: 2px solid silver;
-    border-top: 2px solid silver;
     margin-top: -30px;
     font: 14px/24px roboto-regular,Arial,sans-serif;
     display: inline-block;
     color: #fff;
-}
-
-.round {
-	width: 80px;
-height: 80px;
-border: 2px ; /* Параметры рамки */
-border-radius: 100px; /* Радиус скругления */
-box-shadow: 0 0 0 3px green, 0 0 13px #333; /* Параметры теней */
-}
-
-.box {
-width: 90px;
-height: 90px;
-border-bottom: 2px solid silver;
-    border-top: 2px solid silver;
-border-right: 2px solid silver;
-border-left: 2px solid silver;
 }
